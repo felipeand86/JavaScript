@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+    background-color: burlywood;
+    font: normal 20pt Arial;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+#caixa{
+    box-shadow: 2px 2px 5px;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+
+
+.bt{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+}
+
+.bt:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}

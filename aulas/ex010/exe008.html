@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando os Valores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mete o casco</h1>
+
+    <div id="caixa">
+        <input class="cx" type="number" name="tn1" id="tn1">
+        <input class="cx" type="number" name="tn2" id="tn2">
+        <input class="bt" type="button" value="Somar" onclick="somar()">
+    </div>
+    <div id="res">Resultado do calculo</div>
+
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('tn1')
+            var tn2 = window.document.getElementById('tn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `resultes da conta ${n1} + ${n2} = ${s}` 
+        }
+    </script>
+
+</body>
+</html>
