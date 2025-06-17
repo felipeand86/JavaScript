@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="estilo/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Como vai?</h1>
+      <p>Personalizando a pagina usando JavaScript</p>
+      <div class="oi" id="msgoi">Ola, Visitante!</div>
+      <button onclick="mudaNome()">Personalizando</button>
+    </div>
+
+    <script>
+      function mudaNome() {
+        var nome = "Vinicius";
+        window.document.getElementById("msgoi").textContent = `Olá ${nome}`;
+      }
+    </script>
+  </body>
+</html>
