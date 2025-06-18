@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <h1>Calcule os numeros</h1>
+    <!--soma-->
+    <div class="tela">
+        <div class="soma">
+            <input type="number" name="n1" id="xn1">
+            <input type="number" name="n2" id="xn2">
+            <input class="b1" type="button" value="Soma" onclick="soma()">
+            <div id="res1"><p>Resultado da soma</p></div>
+        </div>
+        
+        <!--subtrair-->
+        <div class="sub">
+            <input type="number" name="yn1" id="yn1">
+            <input type="number" name="yn2" id="yn2">
+            <input class="b2" type="button" value="Subtrair" onclick="subtrair()">
+            <div id="res2"><p>Resultado da subtração</p></div>
+        </div>
+
+        <!--multiplicar-->
+        <div class="mult">
+            <input type="number" name="xyn1" id="xyn1">
+            <input type="number" name="xyn2" id="xyn2">
+            <input class="b3" type="button" value="Multiplica" onclick="mutiplica()">
+            <div id="res3"><p>Resultado da multiplicação</p></div>
+        </div>
+
+        <!--divide-->
+        <div class="divd">
+            <input type="number" name="dn1" id="dn1">
+            <input type="number" name="dn2" id="dn2">
+            <input class="b4" type="button" value="Dividir" onclick="dividir()">
+            <div id="res4"><p>Resultado da divisão</p></div>
+        </div>
+    </div>
+    
+    <script>
+        function soma(){
+            var tn1 = document.getElementById('xn1')
+            var tn2 = document.getElementById('xn2')
+            var res1 = document.getElementById('res1')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s1 = n1 + n2
+            res1.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s1}`
+        }
+
+        function subtrair(){
+            var tn1 = document.getElementById('yn1')
+            var tn2 = document.getElementById('yn2')
+            var res2 = document.getElementById('res2')
+            var tn1 = Number(tn1.value)
+            var tn2 = Number(tn2.value)
+            var s2 = tn1 - tn2
+            res2.innerHTML = `O resultado entre ${tn1} menos ${tn2} é igual a ${s2}`
+        }
+
+        function mutiplica(){
+            var tn1 = document.getElementById('xyn1')
+            var tn2 = document.getElementById('xyn2')
+            var res3 = document.getElementById('res3')
+            var tn1 = Number(tn1.value)
+            var tn2 = Number(tn2.value)
+            var s3 = tn1 * tn2
+            res3.innerHTML = `O resultado entre ${tn1} vezes ${tn2} é igual a ${s3}`
+        }
+
+        function dividir(){
+            var tn1 = document.getElementById('dn1')
+            var tn2 = document.getElementById('dn2')
+            var res4 = document.getElementById('res4')
+            var tn1 = Number(tn1.value)
+            var tn2 = Number(tn2.value)
+            var s4 = tn1 / tn2
+            res4.innerHTML = `O resultado entre a divisão de ${tn1} e ${tn2} é igual a ${s4}`
+        }
+    </script>
+</body>
+</html>

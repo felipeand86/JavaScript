@@ -1,0 +1,98 @@
+body{
+    background-color: blue;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-shadow: 1px 1px 3px black;
+}
+
+.tela{
+    margin: 15px;
+    padding: 15px;
+    font: normal 15pt arial;
+    box-shadow: 2px 2px 4px black;
+    background-color: thistle;
+    border-radius: 10px;
+}
+
+.soma{
+    margin: 15px;
+    padding: 15px;
+    font: normal 15pt arial;
+    box-shadow: 2px 2px 4px black;
+}
+
+.sub{
+    margin: 15px;
+    padding: 15px;
+    font: normal 15pt arial;
+    box-shadow: 2px 2px 4px black;
+}
+
+.mult{
+    margin: 15px;
+    padding: 15px;
+    font: normal 15pt arial;
+    box-shadow: 2px 2px 4px black;
+}
+
+.divd{
+    margin: 15px;
+    padding: 15px;
+    font: normal 15pt arial;
+    box-shadow: 2px 2px 4px black;
+}
+
+.b1{
+    border-radius: 10px;
+}
+.b2{
+    border-radius: 10px;
+}
+.b3{
+    border-radius: 10px;
+}
+.b4{
+    border-radius: 10px;
+}
+
+.b1:hover{
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+.b2:hover{
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+.b3:hover{
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+.b4:hover{
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+input{
+    border-radius: 5px;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
