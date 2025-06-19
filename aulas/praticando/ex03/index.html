@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        div{
+            background-color: darkkhaki;
+            margin: auto;
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Idade</h1>
+    <div>
+        <input type="text" name="ida" id="ida" placeholder="Digite sua idade">
+        <input type="button" value="Clique aqui" onclick="ida()">
+        <div class="r" id="r"></div>
+    </div>
+
+    <script>
+        function ida(){
+            var ida = document.getElementById('ida')
+            var r = document.getElementById('r')
+            var ida = Number(ida.value)
+            if (ida >= 18){
+                r.innerHTML = 'Você é <strong>maior</strong> de idade'
+            } else {
+                r.innerHTML = 'Você é <strong>menor</strong> de idade'
+            }
+        }
+    </script>
+</body>
+</html>
