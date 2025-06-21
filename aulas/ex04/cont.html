@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <h1>Criando um contador</h1>
+    <p>O contador deve incrementar um número acima a cada segundo</p>
+
+    <div id="contador">0</div>
+
+    <script>
+        var contador = 0
+        var contContador = document.getElementById('contador')
+
+        
+        setInterval(() => {
+            contador ++
+            contContador.innerText = contador
+        }, 999
+    )
+        
+    </script>
+
+</body>
+</html>

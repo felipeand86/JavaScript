@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação</title>
+</head>
+<body>
+    <h1>Função de validação</h1>
+    <p>Uma função que valida se o numero é par ou ímpar</p>
+    
+    <input type="text" name="pa" id="pa">
+    <input type="button" value="CliqueAqui" onclick="p()">
+    <div id="res">É par ou impar?</div>
+
+    <script>
+        function p(){
+            var pa = document.getElementById('pa')
+            var pa = Number(pa.value)
+            var res = document.getElementById('res')
+            if(pa % 2 == 0) {
+                res.innerHTML = 'O valor é par'
+            } else {
+                res.innerHTML = 'O valor é impar'
+            }
+        }
+    </script>
+</body>
+</html>

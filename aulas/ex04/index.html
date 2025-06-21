@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Objetos</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <h1>Manipulando objetos em Js</h1>
+    <p>Teste de objetos simples</p>
+
+    <div id="dad">O nome aqui vai mudar</div>
+    <button onclick="insere()">Clica</button>
+
+    <script>
+        function insere(){
+        var nome = 'Felipe'
+        var idade = 38
+        var cidade = 'Jundiai'
+        document.getElementById('dad').textContent = `${nome} de ${idade} anos de idade que mora em ${cidade}`
+        }
+    </script>
+</body>
+</html>
