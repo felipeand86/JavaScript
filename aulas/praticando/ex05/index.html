@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dias da semana</title>
+  </head>
+  <body>
+    <h1>Escolha o dia da semana</h1>
+    <button id="ver-dia">Clique para ver o dia</button>
+    <div id="res"></div>
+
+    <script>
+      document.getElementById('ver-dia').addEventListener("click", function(){
+        var data = new Date()
+        var dia = data.getDay()
+        var res = document.getElementById('res')
+
+        switch(dia){
+            case 0:
+                res.innerHTML = 'Domingo'
+                break
+            case 1: 
+                res.innerHTML = 'Segunda-feira'
+                break
+            case 2:
+                res.innerHTML = 'Terça-feira' 
+                break      
+            case 3:
+                res.innerHTML = 'Quarta-feira' 
+                break      
+            case 4:
+                res.innerHTML = 'Quinta-feira' 
+                break      
+            case 5:
+                res.innerHTML = 'Sexta-feira' 
+                break      
+            case 6:
+                res.innerHTML = 'Sábado' 
+                break      
+        }
+      })
+    </script>
+  </body>
+</html>
