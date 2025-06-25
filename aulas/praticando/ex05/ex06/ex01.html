@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo de Música</title>
+</head>
+<body>
+    <h1>Qual o seu tipo de música favorito?</h1>
+    <input type="number" name="mus" id="mus" placeholder="Digite aqui..">
+    <input type="button" value="Clique Aqui" onclick="verifica()">
+    <input type="checkbox" name="hjhj" id="hjhj">
+    <div id="res"></div>
+
+    <script>
+        function verifica(){
+            var m = document.getElementById('mus')
+            var res = document.getElementById('res')
+            var tipoMus = Number(m.value)
+            var nome = ""
+            switch (tipoMus){
+                case 0:
+                    nome = 'Rock'
+                    break
+                case 1:
+                    nome = 'Pop'
+                    break 
+                case 2:
+                    nome = 'Jazz'
+                    break
+                case 3:
+                    nome = 'Regae'
+                    break
+                    default:
+                    nome = 'Musica inválida'
+                             
+            }
+            res.innerHTML = (`o estilo musical escolhido foi ${nome}`)
+        }
+    </script>
+</body>
+</html>
