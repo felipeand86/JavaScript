@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cores</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <h1>Escolha uma cor</h1>
+    <p>Esolha cores entre as cores "RGB"</p>
+
+    <input type="number" id="ccor">
+    <input type="button" value="Clique Aqui" onclick="mudaCor()">
+    <div id="res"></div>
+    <!--<div class="r" >Teste o Vermelho</div>
+    <div class="g">Teste o Verde</div>
+    <div class="b">Teste o Azul</div>-->
+
+    <script>
+        function mudaCor(){
+            var c = document.getElementById('ccor')
+            var res = document.getElementById('res')
+            var tipoCor = Number(c.value)
+            var cor = ""
+
+            switch (tipoCor){
+                case 0:
+                    document.body.style.backgroundColor = 'blue'
+                    document.body.style.color = 'white'
+                    cor = 'Azul'
+                    break
+                case 1: 
+                    document.body.style.backgroundColor = 'green'
+                    document.body.style.color = 'white'
+                    cor = 'Verde'    
+                    break
+                case 2:
+                    document.body.style.backgroundColor = 'red'
+                    document.body.style.color = 'white'
+                    cor = 'Vermelho'    
+            }
+            res.innerHTML = ('A cor escolhida foi: ' + cor)
+        }
+    </script>
+</body>
+</html>
