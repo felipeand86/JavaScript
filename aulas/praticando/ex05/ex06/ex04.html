@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opções de Usuário</title>
+</head>
+<body>
+    <h1>Veja qual o nivel de acesso do usuário</h1>
+
+    <input type="number" id="ace">
+    <input type="button" value="Clique Aqui" onclick="verifica()">
+    <div id="res"></div>
+
+    <script>
+        function verifica(){
+            var n = document.getElementById('ace')
+            var res = document.getElementById('res')
+            var nivUsu = Number(n.value)
+            var h = ""
+
+            switch(nivUsu){
+                case 0:
+                    h = 'Administrador'
+                    break
+                case 1:
+                    h = 'Moderador'
+                    break
+                case 2:
+                    h = 'Usuário'
+                    break
+                case 3:
+                    h = 'Xereta'
+                    break
+                    default:
+                    h = 'Nivel não encontrado!'
+                    break                
+            }
+            res.innerHTML = `O nivel do fulano é ${h}`
+        }
+    </script>
+
+</body>
+</html>
